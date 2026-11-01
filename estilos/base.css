@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 950px;
+}
+
+footer {
+    font-family: 'Playfair', serif;
+    font-weight: 400;
+    background-color: #1a446b;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.95rem;
+}
+
+#ultimaModificacao {
+    color: #ffff00;
+    font-size: 0.85rem;
+}
+
+header span {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #06033d;
+    color: white;
+    padding: 20px;
+}
+
+header ul {
+    background-color: #242323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgb(0,0,0 / 0.1);
+    list-style-type: none;
+}
+
+header, main {
+    margin: 0 auto;
+}
+
+main {
+    max-width: 950px;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 2px solid #ffff00;
+    color: yellow;
+}
+
+.active {
+    color: yellow;
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #b0c4de; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    background-color: #1a446b; 
+    color: #ffffff;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.card-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Alinhamento lado a lado perfeito no cartão "Sobre Mim" */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-container p {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.about-container img {
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.card-content ul li a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.card-content ul li a:hover {
+    color: #004080;
+    text-decoration: underline;
+}
+
+
+.card-catalao {
+    display: flex;
+    align-items: center;
+    gap: 15px;          
+}
+
+.card-catalao img{
+    width: 120px;       
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card-catalao p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.card-catalao h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a446b;
+    margin-bottom: 10px;
+}
+
+.location-details p{
+    display: flex;
+    align-items: center; 
+    gap: 15px;     
+}
