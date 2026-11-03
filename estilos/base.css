@@ -58,7 +58,7 @@ header ul {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 1px solid rgb(0,0,0 / 0.1);
+    border: 1px solid rgb(0, 0, 0, 0.1);
     list-style-type: none;
 }
 
@@ -77,7 +77,7 @@ nav ul {
 
 nav a {
     display: block;
-    color: #fff;
+    color:#fff;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
