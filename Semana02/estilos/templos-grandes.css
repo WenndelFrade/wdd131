@@ -1,0 +1,64 @@
+@media (min-width: 640px) {
+
+    #menu {
+        display: none;
+    }
+
+   
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+   
+    header h1 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+
+    header nav {
+        width: auto;
+        margin: 0;
+    }
+
+    
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    .navigation li {
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .navigation li a {
+        font-size: 0.95rem;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 0;
+    }
+
+    .navigation li a:hover {
+        text-decoration: underline;
+    }
+
+    .gallery {
+        display: flex ;
+        flex-wrap: wrap ;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    figure {
+        flex: 1 1 31%;
+        max-width: 31%;
+    }
+}
