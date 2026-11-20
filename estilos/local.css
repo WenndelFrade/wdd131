@@ -1,3 +1,11 @@
+:root {
+    --cor-primaria: #3a2323;
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #333333;
+    --cor-cartao: rgb(255, 255, 255, 0.9);
+    --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,14 +14,14 @@
 
 body{ 
 
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;   
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);   
 
 }
 
 header{
-    background-color: #3a2323;
+    background-color: var(--cor-primaria);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -25,7 +33,7 @@ header{
 }
 
 footer{
-    background-color: #3a2323;
+    background-color: var(--cor-primaria);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -62,6 +70,10 @@ ul li{
     padding: 5px;
 }
 
+.informacoes li span:first-of-type::after,
+.clima li span:first-of-type::after {
+    content: ":";
+}
 
 .informacoes h2{
     display: flex;
