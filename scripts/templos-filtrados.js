@@ -116,7 +116,37 @@ const templos = [
     urlDaImagem:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Adicione mais objetos de templos aqui...
+{    
+    nomeDoTemplo:"Brasília, Brasil",
+    localizacao: "Brasília, Brasil",
+    consagracao: "2023-09-17",
+    area: 25000,
+    urlDaImagem:
+    "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-39179.jpg"
+},
+
+{
+    nomeDoTemplo:"Roma, Italia",
+    localizacao: "Roma, Italia",
+    consagracao: "2019-03-10 a 2019-03-10",
+    area: 41110,
+    urlDaImagem:
+    "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-3544.jpg"
+},
+
+{
+    nomeDoTemplo:"Bahia, Brasil",
+    localizacao: "Bahia, Brasil",
+    consagracao: "2024-10-20",
+    area: 29963,
+    urlDaImagem:
+    "https://churchofjesuschristtemples.org/assets/img/temples/salvador-brazil-temple/salvador-brazil-temple-51679.jpg"
+},
+
+
+
+
+
 ];
 
 setFilter('#all', () =>true);
@@ -142,10 +172,12 @@ function createTempleCards(templos){
         name.textContent = templo.nomeDoTemplo;
         location.innerHTML = `<span class="label">Localização:</span> ${templo.localizacao}`;
         dedication.innerHTML = `<span class="label">Dedicado:</span> ${templo.consagracao}`;
-        area.innerHTML = `<span class="label">Tamanho:</span> ${templo.area} m²`;
+        area.innerHTML = `<span class="label">Tamanho:</span> ${templo.area} sq ft`;
         img.setAttribute("src", templo.urlDaImagem);
         img.setAttribute("alt", `Templo ${templo.nomeDoTemplo}`);
         img.setAttribute("loading", "lazy");
+        img.setAttribute("width", "400");
+        img.setAttribute("height", "250");
 
         card.appendChild(name);
         card.appendChild(location);

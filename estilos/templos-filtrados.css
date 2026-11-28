@@ -46,7 +46,7 @@ header {
     content: "☰";
 }
 
-#menu.open::before {
+#menu.show::before {
     content: "✖";
 }
 
@@ -59,6 +59,7 @@ nav {
 
 .navigation {
     list-style: none;
+
 }
 
 .navigation li {
@@ -76,7 +77,7 @@ nav {
 }
 
 
-.navigation.open li {
+.navigation.show li {
     display: block;
 }
 
